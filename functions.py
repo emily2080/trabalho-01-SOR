@@ -1,5 +1,7 @@
-def mostra_menu_tipos_de_unidades_de_medida():
-    print('Escolha que tipo de medida você quer converter:')
+from units import *
+
+def mostra_menu_de_grandezas():
+    print('Escolha a grandeza você quer converter:')
     print('')
     print('1. Distância')
     print('2. Tempo')
@@ -23,7 +25,7 @@ def mostra_menu_unidades_de_medida_para(tipo):
         print(f'{index + 1}. {unidade}')
 
     return int(input('\n>: '))
-    
+
 def distancia(de, valor, para):
     if (de == 1):
         if (para == 1):
