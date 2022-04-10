@@ -4,7 +4,7 @@ import socket
 from functions import *
 from units import *
 
-HOST, PORT = 'localhost', 5001
+HOST, PORT = 'localhost', 5000
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.bind((HOST, PORT))

@@ -1,3 +1,29 @@
+def mostra_menu_tipos_de_unidades_de_medida():
+    print('Escolha que tipo de medida você quer converter:')
+    print('')
+    print('1. Distância')
+    print('2. Tempo')
+    print('3. Velocidade')
+    print('4. Temperatura')
+
+    return int(input('\n>: '))
+
+def mostra_menu_unidades_de_medida_de(tipo):
+    print('Escolha que tipo de medida você quer converter:')
+    print('')
+    for (index, unidade) in enumerate(list(unidades.values())[tipo - 1]):
+        print(f'{index + 1}. {unidade}')
+
+    return int(input('\n>: '))
+
+def mostra_menu_unidades_de_medida_para(tipo):
+    print('Escolha para qual tipo de medida você quer converter:')
+    print('')
+    for (index, unidade) in enumerate(list(unidades.values())[tipo - 1]):
+        print(f'{index + 1}. {unidade}')
+
+    return int(input('\n>: '))
+    
 def distancia(de, valor, para):
     if (de == 1):
         if (para == 1):
